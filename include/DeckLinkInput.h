@@ -100,6 +100,7 @@ namespace media {
 	struct FrameEvent {
 		IDeckLinkVideoInputFrame * dataPointer = nullptr;
 		VideoFrameBGRA surfaceData;
+
 	private:
 		explicit FrameEvent( long width, long height ) : surfaceData{ width, height }, dataPointer{ nullptr } { }
 		explicit FrameEvent( IDeckLinkVideoInputFrame* frame ) : surfaceData{ 0, 0 }, dataPointer{ frame } { }

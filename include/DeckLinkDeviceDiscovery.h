@@ -35,7 +35,7 @@
 
 #pragma once
 
-#include <afxwin.h>
+//#include <afxwin.h>
 
 #include "cinder/gl/gl.h"
 #include "cinder/Noncopyable.h"
